@@ -28,8 +28,6 @@ var wins = 0;                   // How many wins has the player racked up
 function resetGame() {
     remainingGuesses = maxTries;
     gameStarted = false;
-
-    // Use Math.floor to round the random number down to the nearest whole.
     currentWordIndex = Math.floor(Math.random() * (selectableWords.length));
 
     // Clear out arrays
@@ -97,10 +95,9 @@ function makeGuess(letter) {
     checkWin();
 };
 
-// This function takes a letter and finds all instances of 
-// appearance in the string and replaces them in the guess word.
+// This function takes a letter and finds all instances of appearance in the string and replaces them in the guess word.
 function evaluateGuess(letter) {
-    // Array to store positions of letters in string
+    // Array stores positions of letters in string
     var positions = [];
 
     // Loop through word finding all instances of guessed letter, store the indicies in an array.
@@ -109,8 +106,7 @@ function evaluateGuess(letter) {
             positions.push(i);
         }
     }
-
-    // if there are no indicies, remove a guess and update the hangman image
+ 
     if (positions.length <= 0) {
         remainingGuesses--;
     } else {
