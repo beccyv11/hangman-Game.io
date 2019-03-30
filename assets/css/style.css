@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box
+}
+
+
+  .letter-button-color {
+    color: blue;
+  }
+
+  #display {
+    margin-top: 78px;
+    height: 300px;
+    width: auto;
+    border: solid;
+  }
+
+  #display-word {
+    margin-top: 78px;
+    height: 200px;
+    width: autp;
+    border: solid;
+    padding: 20px;
+    margin: 50px;
+  }
+
+  #buttons {
+    padding-top: 60px;
+  }
+
+  #clear {
+    margin-left: 20px;
+    font-size: 25px;
+    color: black;
+    border-style: solid;
+    width: 100px;
+  }
+
+body {
+    background: black;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: white;
+    height:100%;
+    text-align:center;
+    font-size:18px;
+  }
+
+  p {
+      color: white;
+      font-size:12px;
+  }
+  
+  .wrappper{
+    background: grey;
+    width:100%;
+    margin:0 auto;
+  }
+
+  .jumbotron {
+      background: grey;
+      color: white;
+  }
+  
+
+#pressKeyTryAgain, 
+#gameover-image, 
+#youwin-image { display: none;}
+
+img {
+  display: block;
+  margin:0 auto;
+}
+
+ 
